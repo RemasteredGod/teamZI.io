@@ -1,0 +1,145 @@
+/* Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #000;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#hero {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#bg-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button {
+  background: #ff0000;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+#problem,
+#concept,
+#workflow {
+  background: #1a1a1a;
+  padding: 50px 20px;
+}
+
+h2 {
+  color: #ff0000;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.feature,
+.workflow-steps .step {
+  margin: 20px 0;
+  padding: 15px;
+  background: #2a2a2a;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.feature:hover,
+.workflow-steps .step:hover {
+  transform: scale(1.05);
+}
+
+.feature {
+  margin: 20px auto; /* Centers the cards */
+  padding: 20px; /* Adds more padding for a card-like look */
+  background: #2a2a2a;
+  border-radius: 10px;
+  width: 80%; /* Adjusts the width for a vertical layout */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  transition: transform 0.3s;
+}
+
+.feature h3 {
+  font-size: 1.5em; /* Increases font size for better readability */
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1em;
+}
+
+.feature:hover {
+  transform: scale(1.05); /* Slightly enlarges the card on hover */
+}
+
+#concept .container {
+  display: flex;
+  flex-direction: column; /* Aligns cards vertically */
+  align-items: center; /* Centers the cards */
+}
+
+.workflow-steps {
+  display: flex;
+  flex-direction: column; /* Aligns the steps vertically */
+  align-items: center; /* Centers the steps on the page */
+}
+
+.step {
+  margin: 20px auto; /* Centers the cards and adds space between each */
+  padding: 20px; /* Adds padding for a card-like look */
+  background: #2a2a2a;
+  border-radius: 10px;
+  width: 80%; /* Adjusts width for a vertical layout */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  transition: transform 0.3s;
+}
+
+.step h3 {
+  font-size: 1.5em; /* Increases font size for step titles */
+  margin-bottom: 10px;
+  color: #ff0000; /* Adds red color to the step title */
+}
+
+.step p {
+  font-size: 1em;
+}
+
+.step:hover {
+  transform: scale(1.05); /* Slightly enlarges the step on hover */
+}
